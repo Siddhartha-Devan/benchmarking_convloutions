@@ -38,7 +38,6 @@ This can be related with the second reason.
 1x3 and 3x1 Convolutions: These operations might not fit as well into cache, especially because the output of the 1x3 convolution needs to be stored and then reloaded for the 3x1 convolution. This increases the demand on memory bandwidth and can lead to additional delays as data is fetched from main memory.
 
 
-
 Apart from these four reasons, I also think that there may be two more reasons for the experiment's results.
 1. GPU/Hardware Optimization
 Optimization for 3x3 Convolutions: Most deep learning frameworks and hardware accelerators (like GPUs) are highly optimized for standard convolutional operations, especially common kernel sizes like 3x3. These optimizations include parallel processing, specialized instruction sets, and efficient memory usage.
